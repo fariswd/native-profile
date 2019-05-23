@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
             R.id.navigation_home -> {
                 textMessage.setText(R.string.title_home)
                 dashboardSetVisibility(true)
+                cat.bringToFront()
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_dashboard -> {
